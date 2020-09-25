@@ -1,0 +1,11 @@
+rails destroy model Songs name:string artist_id:integer genre_id:integer --no-test-framework
+
+rails destroy model Artists name:string bio:text --no-test-framework
+
+rails destroy model Genres name:string --no-test-framework
+
+rails g resource Songs name:string artist_id:integer genre_id:integer --no-test-framework
+
+rails g resource Artists name:string bio:text --no-test-framework
+
+rails g resource Genres name:string --no-test-framework
